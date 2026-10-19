@@ -20,9 +20,7 @@ React, Vite, React Router, Zustand, React Hook Form, DummyJSON API
     npm install
     npm run dev
 
-## Screenshots
-![Home](screenshots/home.png)
-![Cart](screenshots/cart.png)
+
 
 ## What I learned
 - Global state with Zustand and selectors
