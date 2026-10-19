@@ -54,7 +54,17 @@ function Home() {
     return list;
   }, [products, search, category, sort]);
 
-  if (loading) return <p className="status">Loading products...</p>;
+  if (loading)
+  return (
+    <main className="container">
+      <h1>Products</h1>
+      <div className="product-grid">
+        {Array.from({ length: 12 }).map((_, i) => (
+          <div key={i} className="skeleton" />
+        ))}
+      </div>
+    </main>
+  );
   if (error) return <p className="status error">Error: {error}</p>;
 
   return (
