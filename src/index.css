@@ -141,3 +141,24 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.filters input {
+  flex: 1;
+  min-width: 200px;
+}
