@@ -1,16 +1,31 @@
-# React + Vite
+# ShopEasy: React E-commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce front end built with React.
 
-Currently, two official plugins are available:
+**Live demo:** https://YOUR-APP.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Product listing with search, category filter, and price sorting
+- Product detail pages with dynamic routing
+- Shopping cart with quantity controls, persisted in localStorage
+- Checkout form with validation
+- Loading skeletons, error states, and a mobile-first responsive layout
 
-## React Compiler
+## Tech stack
+React, Vite, React Router, Zustand, React Hook Form, DummyJSON API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run locally
+    git clone https://github.com/Rikriti7/ecommerce-store.git
+    cd ecommerce-store
+    npm install
+    npm run dev
 
-## Expanding the ESLint configuration
+## Screenshots
+![Home](screenshots/home.png)
+![Cart](screenshots/cart.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What I learned
+- Global state with Zustand and selectors
+- Form validation with React Hook Form
+- Client-side routing and dynamic routes
+- Deriving filtered lists with useMemo
