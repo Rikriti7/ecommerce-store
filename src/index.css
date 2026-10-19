@@ -234,3 +234,87 @@ a {
     flex-wrap: wrap;
   }
 }
+
+.checkout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.checkout-form,
+.order-summary {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.field input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.field input:focus {
+  outline: 2px solid #0066cc;
+  border-color: transparent;
+}
+
+.field-error {
+  color: #c0392b;
+  font-size: 13px;
+}
+
+.field-row {
+  display: flex;
+  gap: 16px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.summary-row.total {
+  border-top: 1px solid #ddd;
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.success {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+  .checkout {
+    grid-template-columns: 1fr;
+  }
+}

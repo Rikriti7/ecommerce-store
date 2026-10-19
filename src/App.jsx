@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
+import Success from "./pages/Success";
 
 
 function App() {
@@ -13,7 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<p className="status">Checkout (coming in Stage 5)</p>} />
+        <Route path="/checkout" element={<Checkout />} />
+<Route path="/success" element={<Success />} />
         <Route path="*" element={<p className="status">Page not found</p>} />
       </Routes>
     </>
