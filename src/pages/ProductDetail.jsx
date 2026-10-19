@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 
 function ProductDetail() {
   const { id } = useParams();
+  const addToCart = useCartStore((state) => state.addToCart);
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -47,7 +48,9 @@ function ProductDetail() {
           <p className="detail-price">${product.price}</p>
           <p>⭐ {product.rating} · {product.stock} in stock</p>
           <p>{product.description}</p>
-          <button className="btn" disabled>Add to cart (Stage 4)</button>
+        <button className="btn" onClick={() => addToCart(product)}>
+  Add to cart
+</button>
         </div>
       </div>
     </main>
